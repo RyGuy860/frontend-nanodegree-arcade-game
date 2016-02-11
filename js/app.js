@@ -76,7 +76,7 @@ Player.prototype.handleInput = function(keyCode) {
     } else if (this.y <= -12) {
         this.y = 400;
         this.x = 200;
-        console.log("You Win!!");
+        alert("You Win!!");
     }
 
 };
@@ -96,7 +96,7 @@ Player.prototype.checkCollisions = function() {
             this.x + 50 > allEnemies[i].x &&
             this.y < allEnemies[i].y + 50 &&
             this.y + 50 > allEnemies[i].y) {
-            console.log("game over");
+            alert("game over try again");
             this.reset();
 
 
